@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bali Dream - Luxury Bali travel experiences. Explore Monkey Forest, rice terraces, waterfalls, and cultural tours with our private sightseeing packages.">
+    <meta name="theme-color" content="#2B5A6E">
+    <title>Bali Dream - Luxury Travel & Wellness Experience</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #DC6B5D;
+            --secondary: #2B5A6E;
+            --accent: #F4C430;
+            --light-bg: #F8F7F6;
+            --dark-text: #1A1A1A;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark-text);
+        }
+
+        h1, h2, h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 600;
+        }
+
+        .text-accent {
+            color: var(--primary);
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 32px;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary);
+        }
+
+        .btn-primary:hover {
+            background-color: transparent;
+            color: var(--primary);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            padding: 12px 32px;
+            text-decoration: none;
+            display: inline-block;
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+
+        .stars {
+            color: var(--accent);
+            font-size: 14px;
+            letter-spacing: 2px;
+        }
+
+        .nav {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.05);
+        }
+
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(43, 90, 110, 0.3), rgba(43, 90, 110, 0.5));
+        }
+
+        .section-title {
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+        }
+
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 28px;
+            }
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #2B5A6E, #DC6B5D);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Navigation -->
+    <nav class="nav fixed w-full top-0 z-50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold" style="color: var(--secondary);">bali dream</h1>
+            <div class="hidden md:flex gap-8">
+                <a href="#experiences" class="text-sm font-medium hover:text-accent transition">Experiences</a>
+                <a href="#booking" class="text-sm font-medium hover:text-accent transition">Booking</a>
+                <a href="#testimonials" class="text-sm font-medium hover:text-accent transition">Reviews</a>
+                <a href="#contact" class="text-sm font-medium hover:text-accent transition">Contact</a>
+            </div>
+            <button class="btn-outline text-sm px-6 py-2">Contact</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="h-screen relative overflow-hidden pt-16">
+        <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 1200 800%22><defs><linearGradient id=%22grad%22 x1=%220%25%22 y1=%220%25%22 x2=%22100%25%22 y2=%22100%25%22><stop offset=%220%25%22 style=%22stop-color:%2344AA99;stop-opacity:1%22/><stop offset=%22100%25%22 style=%22stop-color:%232B5A6E;stop-opacity:1%22/></linearGradient></defs><rect fill=%22url(%23grad)%22 width=%221200%22 height=%22800%22/><circle cx=%22400%22 cy=%22200%22 r=%22150%22 fill=%22%2388DD99%22 opacity=%220.1%22/><circle cx=%22900%22 cy=%22600%22 r=%22200%22 fill=%2266BB88%22 opacity=%220.1%22/></svg>'); background-color: #2B5A6E;"></div>
+        <div class="hero-overlay absolute inset-0"></div>
+        <div class="relative z-10 h-full flex flex-col items-center justify-center text-center text-white px-6">
+            <h1 class="text-6xl md:text-7xl font-bold mb-6 font-serif">Bali Dream</h1>
+            <p class="text-lg md:text-xl max-w-2xl mb-8 font-light">Discover the magic of Bali. Luxury travel, cultural immersion, and unforgettable wellness experiences await.</p>
+            <a href="#booking" class="btn-primary">Explore Packages</a>
+        </div>
+    </section>
+
+    <!-- Main Content Wrapper -->
+    <main class="relative">
+        <!-- Featured Section: Join to Uniquely Dream -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="order-2 md:order-1">
+                        <h2 class="section-title mb-6" style="color: var(--secondary);">Join to uniquely dream</h2>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Visit Monkey Forest, Tegallalang Rice Terrace, and more on a full-day private sightseeing tour of Bali. With space for up to five passengers in a private vehicle, the intimate day trip is ideal for families, solo travelers, and couples alike. Included admission to each location spares you the headache of dealing with foreign currency. Conclude your adventure with a cultural stop at a local coffee plantation, which includes a tasting.
+                        </p>
+                        <a href="#booking" class="btn-outline">Join Dream</a>
+                    </div>
+                    <div class="order-1 md:order-2 h-96 rounded-lg overflow-hidden shadow-lg">
+                        <div class="w-full h-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-center">
+                            <div>
+                                <p class="text-sm opacity-75">Featured Image</p>
+                                <p class="text-2xl font-serif">Swing in Paradise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experiences Section -->
+        <section id="experiences" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="section-title text-center mb-16" style="color: var(--secondary);">Select Your Experience</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Experience Card 1 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                        <div class="h-56 bg-gradient-to-br from-green-500 to-teal-600"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold mb-3" style="color: var(--secondary);">Nature & Temples</h3>
+                            <p class="text-gray-600 text-sm mb-4">Explore ancient temples and lush nature reserves. Visit sacred sites with expert guides.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-accent font-bold">From $89</span>
+                                <a href="#booking" class="text-sm font-bold text-accent hover:underline">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Card 2 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                        <div class="h-56 bg-gradient-to-br from-blue-400 to-cyan-600"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold mb-3" style="color: var(--secondary);">Water & Wellness</h3>
+                            <p class="text-gray-600 text-sm mb-4">Waterfall adventures, spa treatments, and yoga sessions in serene locations.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-accent font-bold">From $120</span>
+                                <a href="#booking" class="text-sm font-bold text-accent hover:underline">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Experience Card 3 -->
+                    <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition">
+                        <div class="h-56 bg-gradient-to-br from-yellow-400 to-orange-500"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-serif font-bold mb-3" style="color: var(--secondary);">Culture & Food</h3>
+                            <p class="text-gray-600 text-sm mb-4">Coffee plantation tours, local cuisine tastings, and cultural workshops.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-accent font-bold">From $75</span>
+                                <a href="#booking" class="text-sm font-bold text-accent hover:underline">Learn More →</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Rice Terrace Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="h-96 rounded-lg overflow-hidden shadow-lg">
+                        <div class="w-full h-full bg-gradient-to-br from-lime-300 to-green-600 flex items-center justify-center text-white">
+                            <p class="text-center">
+                                <p class="text-sm opacity-75">Tegallalang Rice Terrace</p>
+                                <p class="text-2xl font-serif">UNESCO World Heritage</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div>
+                        <h2 class="section-title mb-6" style="color: var(--secondary);">Tegallalang Rice Terrace</h2>
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            The iconic rice paddies of Tegallalang showcase the traditional subak irrigation system, a UNESCO-recognized marvel of engineering and sustainability. Walk among the verdant fields, interact with local farmers, and capture unforgettable moments.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed mb-6">
+                            Perfect for photography, this breathtaking landscape offers insight into Balinese agricultural heritage and environmental harmony.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="#booking" class="btn-primary">Book Now</a>
+                            <a href="#experiences" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="section-title text-center mb-16" style="color: var(--secondary);">Explore Bali Beauty</h2>
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="h-72 rounded-lg overflow-hidden shadow-md">
+                        <div class="w-full h-full bg-gradient-to-br from-indigo-400 to-purple-600 flex items-center justify-center text-white">
+                            <p class="text-center">
+                                <p class="text-sm opacity-75">Waterfall Adventure</p>
+                                <p class="text-xl font-serif">Tegenungan Falls</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-72 rounded-lg overflow-hidden shadow-md">
+                        <div class="w-full h-full bg-gradient-to-br from-rose-400 to-pink-500 flex items-center justify-center text-white">
+                            <p class="text-center">
+                                <p class="text-sm opacity-75">Temple Experience</p>
+                                <p class="text-xl font-serif">Tanah Lot Temple</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-72 rounded-lg overflow-hidden shadow-md">
+                        <div class="w-full h-full bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center text-white">
+                            <p class="text-center">
+                                <p class="text-sm opacity-75">Beach Sunset</p>
+                                <p class="text-xl font-serif">Seminyak Beach</p>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="h-72 rounded-lg overflow-hidden shadow-md">
+                        <div class="w-full h-full bg-gradient-to-br from-amber-400 to-orange-600 flex items-center justify-center text-white">
+                            <p class="text-center">
+                                <p class="text-sm opacity-75">Cultural Tour</p>
+                                <p class="text-xl font-serif">Ubud Palace</p>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="py-16 md:py-24 bg-white">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="section-title mb-12" style="color: var(--secondary);">Select Date and Travelers</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <div class="mb-8">
+                            <label class="block text-sm font-semibold mb-3" style="color: var(--secondary);">📅 Select Date</label>
+                            <input type="date" class="w-full px-4 py-3 border-2" style="border-color: #E5E7EB;">
+                        </div>
+                        <div class="mb-8">
+                            <label class="block text-sm font-semibold mb-3" style="color: var(--secondary);">👥 Number of Travelers</label>
+                            <select class="w-full px-4 py-3 border-2" style="border-color: #E5E7EB;">
+                                <option>1 Adult</option>
+                                <option>2 Adults</option>
+                                <option>3-4 Adults</option>
+                                <option>5+ Adults</option>
+                            </select>
+                        </div>
+                        <button class="btn-primary w-full mb-4">Check Availability</button>
+                        <p class="text-xs text-gray-500">✓ Reserve now & pay later • ✓ Free cancellation up to 24 hours</p>
+                    </div>
+                    <div class="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-lg">
+                        <h3 class="text-xl font-serif font-bold mb-6" style="color: var(--secondary);">Reserve Now & Pay Later</h3>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex justify-between text-gray-700">
+                                <span>Secure your spot while staying flexible</span>
+                            </div>
+                            <div class="border-t-2" style="border-color: #E5E7EB;"></div>
+                            <div class="flex justify-between font-bold text-lg" style="color: var(--secondary);">
+                                <span>Starting Price</span>
+                                <span>$89</span>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4 rounded mb-6">
+                            <p class="text-sm font-semibold mb-2" style="color: var(--secondary);">Free Cancellation</p>
+                            <p class="text-xs text-gray-600">Up to 24 hours in advance • Learn more about cancellations</p>
+                        </div>
+                        <a href="#booking" class="btn-primary w-full text-center">Proceed to Booking</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-16 md:py-24 bg-gray-50">
+            <div class="max-w-6xl mx-auto px-6">
+                <h2 class="section-title text-center mb-16" style="color: var(--secondary);">What Travelers Say</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            "An absolutely unforgettable experience! The guides were knowledgeable and the itinerary perfectly balanced adventure with relaxation. Bali Dream made our dream vacation a reality."
+                        </p>
+                        <div>
+                            <p class="font-semibold" style="color: var(--secondary);">Sarah Johnson</p>
+                            <p class="text-sm text-gray-500">Family Trip, July 2024</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            "From the moment we arrived, everything was perfectly organized. The private tour allowed us to explore at our own pace and connect with the local culture authentically."
+                        </p>
+                        <div>
+                            <p class="font-semibold" style="color: var(--secondary);">Mark & Lisa Chen</p>
+                            <p class="text-sm text-gray-500">Couples Trip, June 2024</p>
+                        </div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="flex mb-4">
+                            <span class="stars">★★★★★</span>
+                        </div>
+                        <p class="text-gray-600 mb-6 leading-relaxed">
+                            "I traveled solo and felt completely safe and supported throughout. The experiences offered genuine connection with Balinese culture. Highly recommend for solo travelers!"
+                        </p>
+                        <div>
+                            <p class="font-semibold" style="color: var(--secondary);">Emma Rodriguez</p>
+                            <p class="text-sm text-gray-500">Solo Trip, May 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-16 md:py-24 bg-white">
+            <div class="max-w-3xl mx-auto px-6">
+                <h2 class="section-title text-center mb-16" style="color: var(--secondary);">Frequently Asked Questions</h2>
+                <div class="space-y-6">
+                    <details class="border-b-2" style="border-color: #E5E7EB;">
+                        <summary class="py-4 font-semibold cursor-pointer" style="color: var(--secondary);">What's included in the tour package?</summary>
+                        <p class="pb-4 text-gray-600">Our packages include private transportation, entrance fees to all locations, guided tours by experienced local guides, and lunch at a selected restaurant. Specific inclusions vary by package.</p>
+                    </details>
+                    <details class="border-b-2" style="border-color: #E5E7EB;">
+                        <summary class="py-4 font-semibold cursor-pointer" style="color: var(--secondary);">How many people can join a private tour?</summary>
+                        <p class="pb-4 text-gray-600">Our private vehicles accommodate up to 5 passengers. This ensures an intimate experience and flexibility for your group's preferences.</p>
+                    </details>
+                    <details class="border-b-2" style="border-color: #E5E7EB;">
+                        <summary class="py-4 font-semibold cursor-pointer" style="color: var(--secondary);">What is the cancellation policy?</summary>
+                        <p class="pb-4 text-gray-600">We offer free cancellation up to 24 hours before your scheduled tour. Cancellations within 24 hours may incur a fee. Reserve now and pay later for maximum flexibility.</p>
+                    </details>
+                    <details class="border-b-2" style="border-color: #E5E7EB;">
+                        <summary class="py-4 font-semibold cursor-pointer" style="color: var(--secondary);">Are the tours suitable for children?</summary>
+                        <p class="pb-4 text-gray-600">Absolutely! Our tours are family-friendly. We can customize the itinerary based on children's ages and interests. Please mention when booking.</p>
+                    </details>
+                    <details class="border-b-2" style="border-color: #E5E7EB;">
+                        <summary class="py-4 font-semibold cursor-pointer" style="color: var(--secondary);">Do you provide transportation from the hotel?</summary>
+                        <p class="pb-4 text-gray-600">Yes, we offer complimentary hotel pickup and drop-off from most hotels in Ubud, Seminyak, and Canggu. Please confirm your location when booking.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section id="contact" class="py-16 md:py-24 bg-gradient-to-r from-teal-600 to-teal-800 text-white">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="section-title mb-6" style="color: white;">Ready to Dream?</h2>
+                <p class="text-lg mb-8 opacity-95">Start your Bali Dream journey today. Book now and receive exclusive early-bird discounts!</p>
+                <div class="flex flex-col md:flex-row gap-4 justify-center">
+                    <a href="#booking" class="btn-primary" style="background-color: var(--primary);">Book Your Dream</a>
+                    <a href="#contact" class="btn-outline" style="border-color: white; color: white;">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-bold mb-4">Bali Dream</h3>
+                    <p class="text-sm text-gray-400">Luxury travel experiences in Bali. Unforgettable moments, authentic connections.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Experiences</h4>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li><a href="#experiences" class="hover:text-white transition">Nature Tours</a></li>
+                        <li><a href="#experiences" class="hover:text-white transition">Wellness Packages</a></li>
+                        <li><a href="#experiences" class="hover:text-white transition">Cultural Tours</a></li>
+                        <li><a href="#experiences" class="hover:text-white transition">Adventure Activities</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Information</h4>
+                    <ul class="text-sm text-gray-400 space-y-2">
+                        <li><a href="#booking" class="hover:text-white transition">Booking</a></li>
+                        <li><a href="#testimonials" class="hover:text-white transition">Reviews</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Follow Us</h4>
+                    <div class="flex gap-4">
+                        <a href="#" title="Instagram" class="text-gray-400 hover:text-white transition">📷</a>
+                        <a href="#" title="Facebook" class="text-gray-400 hover:text-white transition">f</a>
+                        <a href="#" title="Twitter" class="text-gray-400 hover:text-white transition">𝕏</a>
+                        <a href="#" title="TikTok" class="text-gray-400 hover:text-white transition">♪</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-sm text-gray-400">
+                <p>&copy; 2024 Bali Dream. All rights reserved. | <a href="#" class="hover:text-white">Terms</a> | <a href="#" class="hover:text-white">Privacy</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && document.querySelector(href)) {
+                    e.preventDefault();
+                    document.querySelector(href).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add scroll effect to nav
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('.nav');
+            if (window.scrollY > 100) {
+                nav.style.boxShadow = '0 4px 30px rgba(0,0,0,0.1)';
+            } else {
+                nav.style.boxShadow = '0 2px 20px rgba(0,0,0,0.05)';
+            }
+        });
+    </script>
+</body>
+</html>
